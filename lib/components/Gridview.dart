@@ -54,7 +54,10 @@ class GridviewContainer extends StatelessWidget {
                       child: Text(img[i],style: TextStyle(color: Colors.white,fontSize: 12),),
                     ),
                     SizedBox(height: 4,),
-                    Text("Best Coffee for you",style: TextStyle(color: Colors.red,fontSize: 8),),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 8.0),
+                      child: Text("Best Coffee ",style: TextStyle(color: Colors.red,fontSize: 8),),
+                    ),
                     SizedBox(height: 8,),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,

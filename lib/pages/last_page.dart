@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shop_app/pages/cart_page.dart';
 
 class LastPage extends StatefulWidget {
   String img;
@@ -151,7 +152,7 @@ class _LastPageState extends State<LastPage> {
                     Padding(
                       padding: const EdgeInsets.only(left: 15.0),
                       child: InkWell(
-                        onTap: (){},
+                        onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => CartPage(),)),
                         child: Container(
                           width: 200,
                           height: 70,
@@ -177,7 +178,7 @@ class _LastPageState extends State<LastPage> {
                           borderRadius: BorderRadius.circular(8),
                           color: Colors.black,
                         ),
-                        child: IconButton(onPressed:  callBack,icon: Icon(Icons.favorite,size: 22,color: isSelected ? Colors.deepOrange: Colors.white,)),
+                        child: IconButton(onPressed:  callBack,icon: Icon(Icons.favorite,size: 22,color: isSelected ? Colors.red: Colors.white,)),
                       ),
                     ),
                   ],
